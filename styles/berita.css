@@ -1,0 +1,118 @@
+/* berita */
+
+.nav-berita-container h2 {
+  color: #212427;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.combined-button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(258deg, #59ffb9, #326cff);
+  border-radius: 100px;
+}
+.combined-button button {
+  border: none;
+  padding: 15px 25px;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+}
+
+.berita-container {
+  padding: 0px 5%;
+}
+
+.berita-container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.2fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+.box-container .box {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 30px;
+
+  position: relative;
+}
+
+.timestamp {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  right: 7%;
+  border-radius: 5px;
+  background: rgba(33, 36, 39, 0.5);
+  color: #fff;
+  padding: 5px;
+}
+
+.camera-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.timestamp-text {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.box .box-img {
+  width: 288px;
+  height: 216px;
+  border-radius: 32px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box-img .img-berita {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.box-container .box .paragraft {
+  color: #212427;
+  font-size: 10px;
+  font-style: normal;
+  margin: 10px 0 0 0;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 288px;
+  text-align: left;
+}
+.box-container .box .tanggal {
+  color: #6c6c6c;
+  font-size: 8px;
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+.box:hover {
+  background-position: right;
+}
+.box:hover .img-berita {
+  transform: scale(1.1);
+}
+
+.box:hover .paragraft {
+  color: rgb(255, 165, 0);
+}

@@ -1,0 +1,194 @@
+/* about */
+.about-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 0 5%;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  width: auto;
+  height: 600px;
+}
+
+.sidecard {
+  background-image: linear-gradient(258deg, #326cff, #59ffb9, #326cff);
+  grid-row: span 3;
+  cursor: pointer;
+  background-size: 200%;
+  transition: 0.6s;
+}
+
+.funrun-container {
+  width: 480px;
+  height: 360px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.funrun-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.sidecard:hover {
+  background-position: right;
+}
+.sidecard:hover img {
+  transform: scale(1.1);
+}
+
+.sidecard h5 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: normal;
+}
+
+.sidecard p {
+  max-width: 480px;
+  color: #fff;
+  line-height: normal;
+}
+
+.rightcard1 {
+  background-image: linear-gradient(258deg, #326cff, #59ffb9, #326cff);
+  cursor: pointer;
+  background-size: 200%;
+  transition: 0.6s;
+  top: 0;
+}
+
+.rightcard1:hover {
+  background-position: right;
+}
+
+.rightcard1 h5 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: normal;
+}
+
+.rightcard1 p {
+  color: #fff;
+  line-height: normal;
+}
+.rightcard2 {
+  background-image: linear-gradient(258deg, #326cff, #59ffb9, #326cff);
+  cursor: pointer;
+  background-size: 200%;
+  transition: 0.6s;
+  top: 0;
+}
+
+.rightcard2:hover {
+  background-position: right;
+}
+
+.rightcard2 h5 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  line-height: normal;
+}
+
+.rightcard2 p {
+  color: #fff;
+  line-height: normal;
+}
+.rightcard3 {
+  display: flex;
+  background-image: linear-gradient(258deg, #326cff, #59ffb9, #326cff);
+  cursor: pointer;
+  background-size: 200%;
+  transition: 0.6s;
+  top: 0;
+}
+
+.special-container {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.rightcard3 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.rightcard3:hover {
+  background-position: right;
+}
+.rightcard3:hover img {
+  transform: scale(1.2);
+}
+
+.rightcard3 h5 {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: normal;
+}
+
+.rightcard3 p {
+  color: #fff;
+  line-height: normal;
+}
+
+.daftar-button {
+  background-color: #ffc73c;
+  box-shadow: 0px 8px 20px rgba(255, 199, 60, 1);
+  border-radius: 100px;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-size: 200%;
+  transition: 0.6s;
+}
+
+.daftar-button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.daftar-button:hover {
+  background-color: #fda541;
+}
+
+@media screen and (max-width: 900px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: auto;
+  }
+
+  .sidecard,
+  .rightcard1,
+  .rightcard2,
+  .rightcard3 {
+    width: 100%; /* Pastikan lebar 100% agar tidak bertumpuk */
+    margin-bottom: 10px; /* Atur jarak antar elemen */
+  }
+  .funrun-container {
+    width: auto;
+    height: auto;
+  }
+
+  .rightcard3 {
+    display: block;
+  }
+  .special-container {
+    width: auto;
+    height: auto;
+  }
+  .special-container {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+}
